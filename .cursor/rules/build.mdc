@@ -1,0 +1,95 @@
+# Build and Configuration Rules
+
+## Context
+This file contains rules for build scripts, configuration files, and project setup in the Gemini CLI project. Focus on build processes, scripts, and project configuration.
+
+## Files
+- package.json
+- package-lock.json
+- tsconfig.json
+- esbuild.config.js
+- eslint.config.js
+- .prettierrc.json
+- .editorconfig
+- .gitignore
+- .npmrc
+- .nvmrc
+- Makefile
+- scripts/**/*.js
+- scripts/**/*.ts
+- packages/*/package.json
+- packages/*/tsconfig.json
+- packages/*/vitest.config.ts
+- packages/*/eslint.config.js
+
+## Mode
+act
+
+## Rules
+
+### Package Configuration
+- Use consistent versioning across packages
+- Maintain proper dependency relationships
+- Use workspace dependencies appropriately
+- Keep package.json files clean and organized
+- Use proper script definitions and naming
+
+### Build Configuration
+- Use esbuild for efficient bundling
+- Configure TypeScript properly for each package
+- Implement proper source maps
+- Use appropriate target environments
+- Optimize bundle size and performance
+
+### Scripts and Automation
+- Write clear, documented scripts
+- Use proper error handling in scripts
+- Implement proper logging and output
+- Use cross-platform compatibility
+- Follow consistent naming conventions
+
+### Code Quality Tools
+- Configure ESLint with appropriate rules
+- Use Prettier for consistent formatting
+- Implement proper TypeScript configuration
+- Use proper ignore patterns
+- Maintain consistent code style
+
+### Development Environment
+- Use proper Node.js version management
+- Configure proper development tools
+- Implement proper debugging setup
+- Use appropriate development dependencies
+- Maintain consistent environment setup
+
+### Build Process
+- Implement proper build pipelines
+- Use appropriate build targets
+- Implement proper asset handling
+- Use efficient build caching
+- Maintain build reproducibility
+
+### Configuration Management
+- Use environment-specific configurations
+- Implement proper configuration validation
+- Use secure configuration practices
+- Maintain configuration documentation
+- Implement proper fallback mechanisms
+
+### Dependencies
+- Keep dependencies up-to-date
+- Use appropriate dependency types
+- Implement proper dependency security
+- Use lock files consistently
+- Monitor dependency vulnerabilities
+
+### Performance
+- Optimize build times
+- Implement proper caching strategies
+- Use efficient bundling techniques
+- Minimize bundle sizes
+- Implement proper tree shaking
+description:
+globs:
+alwaysApply: false
+---

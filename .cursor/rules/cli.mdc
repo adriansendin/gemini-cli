@@ -1,0 +1,77 @@
+# CLI Interface Rules
+
+## Context
+This file contains rules for the CLI interface components of the Gemini CLI project. Focus on user interaction, command processing, and terminal UI.
+
+## Files
+- packages/cli/src/ui/**/*.tsx
+- packages/cli/src/ui/**/*.ts
+- packages/cli/src/ui/commands/**/*.ts
+- packages/cli/src/ui/hooks/**/*.ts
+- packages/cli/src/ui/components/**/*.tsx
+- packages/cli/src/ui/contexts/**/*.tsx
+- packages/cli/src/ui/themes/**/*.ts
+- packages/cli/src/ui/utils/**/*.ts
+- packages/cli/src/ui/privacy/**/*.tsx
+- packages/cli/src/ui/editors/**/*.ts
+- packages/cli/src/ui/messages/**/*.tsx
+- packages/cli/src/ui/shared/**/*.tsx
+- packages/cli/src/ui/shared/**/*.ts
+
+## Mode
+act
+
+## Rules
+
+### React/Ink UI Components
+- Use functional components with hooks
+- Follow React best practices for state management
+- Use Ink components for terminal UI (Box, Text, Static, etc.)
+- Implement proper error boundaries and error handling
+- Use TypeScript for all component props and state
+
+### Command Processing
+- Commands should be modular and follow the SlashCommand interface
+- Implement proper argument parsing and validation
+- Use async/await for command execution
+- Provide clear error messages and help text
+- Support command completion and suggestions
+
+### UI/UX Guidelines
+- Ensure accessibility in terminal environment
+- Use consistent color schemes and themes
+- Implement proper keyboard navigation
+- Provide clear visual feedback for user actions
+- Support both interactive and non-interactive modes
+
+### State Management
+- Use React Context for global state
+- Implement proper session management
+- Handle loading states and progress indicators
+- Maintain conversation history properly
+- Implement proper cleanup on unmount
+
+### Testing
+- Write unit tests for all UI components
+- Test command functionality thoroughly
+- Mock external dependencies appropriately
+- Test error scenarios and edge cases
+- Use React Testing Library patterns
+
+### Performance
+- Optimize re-renders with proper memoization
+- Implement virtual scrolling for large lists
+- Use efficient state updates
+- Minimize bundle size for CLI distribution
+- Implement proper memory management
+
+### Code Style
+- Follow the project's ESLint configuration
+- Use consistent naming conventions
+- Implement proper TypeScript types
+- Add JSDoc comments for complex functions
+- Keep components focused and single-purpose
+description:
+globs:
+alwaysApply: false
+---

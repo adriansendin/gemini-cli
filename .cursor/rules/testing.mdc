@@ -1,0 +1,90 @@
+# Testing and Quality Rules
+
+## Context
+This file contains rules for testing, code quality, and development practices in the Gemini CLI project. Focus on unit tests, integration tests, and quality assurance.
+
+## Files
+- **/*.test.ts
+- **/*.test.tsx
+- **/*.test.js
+- **/*.spec.ts
+- **/*.spec.tsx
+- **/*.spec.js
+- integration-tests/**/*.js
+- integration-tests/**/*.ts
+- packages/*/src/**/__tests__/**/*
+- packages/*/src/**/__mocks__/**/*
+- packages/*/test-utils/**/*
+
+## Mode
+act
+
+## Rules
+
+### Unit Testing
+- Write tests for all public functions and methods
+- Test both success and error scenarios
+- Use descriptive test names that explain the behavior
+- Follow AAA pattern (Arrange, Act, Assert)
+- Mock external dependencies appropriately
+- Test edge cases and boundary conditions
+
+### Integration Testing
+- Test complete workflows and user journeys
+- Test API integrations and external services
+- Use realistic test data and scenarios
+- Test error handling and recovery
+- Verify end-to-end functionality
+
+### Test Structure
+- Group related tests using describe blocks
+- Use beforeEach and afterEach for setup/cleanup
+- Keep tests independent and isolated
+- Use proper test data factories
+- Implement proper test utilities and helpers
+
+### Mocking and Stubbing
+- Mock external APIs and services
+- Use proper mock implementations
+- Verify mock calls and interactions
+- Reset mocks between tests
+- Use realistic mock responses
+
+### Test Coverage
+- Aim for high test coverage (>80%)
+- Focus on critical business logic
+- Test error paths and edge cases
+- Include integration test coverage
+- Monitor coverage trends over time
+
+### Performance Testing
+- Test performance characteristics
+- Monitor memory usage in tests
+- Test with realistic data volumes
+- Benchmark critical operations
+- Test scalability and load handling
+
+### Code Quality
+- Follow ESLint rules strictly
+- Use TypeScript for type safety
+- Implement proper error handling
+- Write self-documenting code
+- Use consistent naming conventions
+
+### Test Data Management
+- Use factories for test data creation
+- Implement proper test data cleanup
+- Use realistic but minimal test data
+- Avoid hardcoded test values
+- Use proper test data isolation
+
+### Continuous Integration
+- Ensure tests pass in CI environment
+- Use proper test reporting
+- Implement test result analysis
+- Monitor test execution time
+- Maintain test stability and reliability
+description:
+globs:
+alwaysApply: false
+---

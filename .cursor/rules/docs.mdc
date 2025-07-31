@@ -1,0 +1,79 @@
+# Documentation Rules
+
+## Context
+This file contains rules for documentation, guides, and technical writing in the Gemini CLI project. Focus on user guides, API documentation, and technical specifications.
+
+## Files
+- docs/**/*.md
+- README.md
+- CONTRIBUTING.md
+- ROADMAP.md
+- GEMINI.md
+- LICENSE
+- packages/*/README.md
+- packages/*/CHANGELOG.md
+
+## Mode
+plan
+
+## Rules
+
+### Documentation Structure
+- Use clear, descriptive headings and subheadings
+- Follow a logical hierarchy (H1 → H2 → H3)
+- Use consistent formatting and style
+- Include table of contents for long documents
+- Maintain proper navigation between related docs
+
+### Content Guidelines
+- Write for the target audience (developers, users, contributors)
+- Use clear, concise language
+- Provide practical examples and code snippets
+- Include troubleshooting sections where appropriate
+- Keep documentation up-to-date with code changes
+
+### Code Examples
+- Use proper syntax highlighting
+- Include complete, runnable examples
+- Show both simple and advanced use cases
+- Include error handling examples
+- Use consistent code formatting
+
+### User Guides
+- Start with quick start instructions
+- Provide step-by-step tutorials
+- Include screenshots or diagrams when helpful
+- Explain concepts before diving into details
+- Include common use cases and workflows
+
+### API Documentation
+- Document all public APIs and interfaces
+- Include parameter descriptions and types
+- Provide usage examples for each function
+- Document error conditions and handling
+- Include deprecation notices when applicable
+
+### Technical Writing
+- Use active voice when possible
+- Be specific and avoid ambiguity
+- Use consistent terminology throughout
+- Include cross-references to related content
+- Maintain a professional but approachable tone
+
+### Markdown Best Practices
+- Use proper markdown syntax
+- Include alt text for images
+- Use proper link formatting
+- Structure lists and tables clearly
+- Use code blocks with language specification
+
+### Maintenance
+- Review and update documentation regularly
+- Link to related issues and discussions
+- Include version information where relevant
+- Maintain changelog entries
+- Keep documentation in sync with code releases
+description:
+globs:
+alwaysApply: false
+---

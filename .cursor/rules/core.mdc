@@ -1,0 +1,90 @@
+# Core Business Logic Rules
+
+## Context
+This file contains rules for the core business logic, tools, and services of the Gemini CLI project. Focus on API integration, tool implementations, and core functionality.
+
+## Files
+- packages/core/src/core/**/*.ts
+- packages/core/src/tools/**/*.ts
+- packages/core/src/services/**/*.ts
+- packages/core/src/mcp/**/*.ts
+- packages/core/src/telemetry/**/*.ts
+- packages/core/src/utils/**/*.ts
+- packages/core/src/config/**/*.ts
+- packages/core/src/ide/**/*.ts
+- packages/core/src/code_assist/**/*.ts
+- packages/core/src/prompts/**/*.ts
+
+## Mode
+act
+
+## Rules
+
+### API Integration
+- Use proper error handling for all API calls
+- Implement retry logic with exponential backoff
+- Handle rate limiting and quota errors gracefully
+- Use proper authentication and authorization
+- Implement proper logging and telemetry
+
+### Tool Implementation
+- Follow the Tool interface contract strictly
+- Implement proper parameter validation
+- Provide clear error messages and descriptions
+- Use async/await for all tool operations
+- Implement proper cleanup and resource management
+- Support streaming output when appropriate
+
+### MCP (Model Context Protocol)
+- Follow MCP specification strictly
+- Implement proper server discovery and connection
+- Handle authentication and authorization properly
+- Support multiple transport mechanisms
+- Implement proper error handling and fallbacks
+- Use proper tool name sanitization
+
+### Configuration Management
+- Use strong typing for all configuration
+- Implement proper validation and defaults
+- Support hierarchical configuration (system/user/workspace)
+- Handle environment variables properly
+- Implement proper configuration merging
+
+### File System Operations
+- Use proper path handling and normalization
+- Implement proper error handling for file operations
+- Support different file encodings
+- Handle large files efficiently
+- Implement proper file filtering and globbing
+
+### Security
+- Validate all user inputs
+- Implement proper sandboxing
+- Handle sensitive data securely
+- Use proper authentication mechanisms
+- Implement proper access controls
+
+### Performance
+- Use efficient algorithms and data structures
+- Implement proper caching where appropriate
+- Handle large datasets efficiently
+- Minimize memory usage
+- Use proper async patterns
+
+### Testing
+- Write comprehensive unit tests
+- Test error scenarios thoroughly
+- Mock external dependencies
+- Test performance characteristics
+- Use proper test isolation
+
+### Code Quality
+- Follow TypeScript best practices
+- Use proper error types and handling
+- Implement proper logging
+- Add comprehensive JSDoc comments
+- Keep functions focused and single-purpose
+description:
+globs:
+alwaysApply: false
+---

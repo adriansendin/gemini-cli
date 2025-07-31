@@ -1,0 +1,90 @@
+# VS Code Extension Rules
+
+## Context
+This file contains rules for the VS Code IDE companion extension of the Gemini CLI project. Focus on IDE integration, extension development, and user experience.
+
+## Files
+- packages/vscode-ide-companion/**/*.ts
+- packages/vscode-ide-companion/**/*.js
+- packages/vscode-ide-companion/**/*.json
+- packages/vscode-ide-companion/assets/**/*
+- packages/vscode-ide-companion/src/**/*
+
+## Mode
+act
+
+## Rules
+
+### Extension Architecture
+- Follow VS Code extension best practices
+- Use proper extension activation events
+- Implement proper command registration
+- Use appropriate extension points
+- Follow VS Code API guidelines
+
+### IDE Integration
+- Implement seamless CLI integration
+- Provide proper status bar indicators
+- Use appropriate notification mechanisms
+- Implement proper file watching
+- Handle workspace changes properly
+
+### User Experience
+- Provide clear and helpful commands
+- Implement proper error handling
+- Use appropriate progress indicators
+- Provide helpful documentation
+- Implement proper keyboard shortcuts
+
+### Communication
+- Implement proper IPC mechanisms
+- Handle communication errors gracefully
+- Use appropriate message formats
+- Implement proper timeout handling
+- Maintain connection stability
+
+### File Management
+- Handle file operations properly
+- Implement proper file watching
+- Use appropriate file system APIs
+- Handle file permissions correctly
+- Implement proper file synchronization
+
+### Configuration
+- Use proper extension configuration
+- Implement configuration validation
+- Provide sensible defaults
+- Support workspace-specific settings
+- Implement proper configuration updates
+
+### Security
+- Validate all inputs and outputs
+- Use secure communication protocols
+- Handle sensitive data properly
+- Implement proper access controls
+- Follow security best practices
+
+### Performance
+- Optimize extension startup time
+- Implement proper resource management
+- Use efficient algorithms
+- Minimize memory usage
+- Implement proper cleanup
+
+### Testing
+- Write comprehensive extension tests
+- Test integration scenarios
+- Mock VS Code APIs appropriately
+- Test error conditions
+- Use proper test isolation
+
+### Documentation
+- Provide clear extension documentation
+- Include usage examples
+- Document configuration options
+- Provide troubleshooting guides
+- Keep documentation up-to-date
+description:
+globs:
+alwaysApply: false
+---
